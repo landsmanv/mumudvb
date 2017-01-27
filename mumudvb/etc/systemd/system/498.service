@@ -1,0 +1,13 @@
+[Unit]
+Description=mumudvb 498
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStartPre=/bin/mkdir -p -p /var/run/mumudvb
+ExecStart=/usr/bin/mumudvb -v -c /etc/mumudvb/498.conf
+Restart=always
+RestartSec=60
+
+[Install]
+WantedBy=multi-user.target

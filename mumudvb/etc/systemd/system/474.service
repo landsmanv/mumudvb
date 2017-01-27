@@ -1,0 +1,13 @@
+[Unit]
+Description=mumudvb 474
+After=syslog.target network.target
+
+[Service]
+Type=forking
+ExecStartPre=/bin/mkdir -p -p /var/run/mumudvb
+ExecStart=/usr/bin/mumudvb -v -c /etc/mumudvb/474.conf
+Restart=always
+RestartSec=30
+
+[Install]
+WantedBy=multi-user.target

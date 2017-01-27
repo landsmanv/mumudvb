@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="cs" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>IPTV</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" />
+  </head>
+  <body>
+    <script src=channels.js></script>
+    <h1>IPTV streaming</h1>
+    <h3>Programy</h3>
+    <p>Kompletní playlist (<a href="iptv.m3u" target="_blank">iptv.m3u</a>) je generován automaticky dle aktuální nabídky (per multiplex viz níže)</p>
+    <ul>
+      <li>474 Mhz <a href="http://192.168.128.10:474/playlist.m3u" target="_blank">playlist.m3u</a>
+        <ul id="474000"></ul>
+      </li>
+      <li>482 Mhz <a href="http://192.168.128.10:482/playlist.m3u" target="_blank">playlist.m3u</a>
+        <ul id="482000"></ul>
+      </li>
+      <li>490 Mhz <a href="http://192.168.128.10:490/playlist.m3u" target="_blank">playlist.m3u</a>
+        <ul id="490000"></ul>
+      </li>
+      <li>498 Mhz <a href="http://192.168.128.10:498/playlist.m3u" target="_blank">playlist.m3u</a>
+        <ul id="498000"></ul>
+      </li>
+    </ul>
+    <h3>Vysílač</h3>
+    <ul>
+      <li>Notebook board ~10W</li>
+      <li><a href="https://www.archlinux.org" target="_blank">Arch linux x86_64</a></li>
+      <li><a href="http://mumudvb.net" target="_blank">MuMuDVB unicast</a></li>
+      <li>2x Dual DVB-T tuner evolveo venus (4 multiplexy) </li>
+      <li style="list-style-type: none"><img src="venus.jpg" alt="evolveo venus" height="320" width="480" /></li>
+    </ul>
+    <h3>Přehrávače</h3>
+    <ul>
+      <li><a href="http://www.videolan.org/vlc/" target="_blank">VLC</a></li>
+      <li style="list-style-type: none"><img src="vlc.png" alt="vlc" /></li>
+      <li><a href="http://mpc-hc.org/" target="_blank">MPC-HC</a></li>
+      <li style="list-style-type: none"><img src="mpchc.png" alt="mpchc" /></li>
+      <li><a href="https://play.google.com/store/apps/details?id=org.videolan.vlc&hl=cs" target="_blank">Android / iOS VLC</a></li>
+      <li style="list-style-type: none"><img src="android.png" alt="google android" /></li>
+      <li>Windows media player</li>
+    </ul>
+  </body>
+</html>
