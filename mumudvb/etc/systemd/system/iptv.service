@@ -1,0 +1,9 @@
+[Unit]
+Description=Create iptv m3u with all multiplexes
+
+[Service]
+Type=simple
+ExecStart=/etc/mumudvb/iptv.sh
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+Description=Runs iptv every hour
+
+[Timer]
+OnBootSec=10min
+OnUnitActiveSec=1h
+Unit=iptv.service
+
+[Install]
+WantedBy=multi-user.target
